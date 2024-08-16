@@ -1,0 +1,220 @@
+/* IMPORTING FONT
+########################### */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* CSS RESET
+########################### */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* DECLARING VARIABLES
+########################### */
+
+:root {
+  /*Top section Colors*/
+  --clr-Lightslatebluebackground: hsl(252, 100%, 67%);
+  --clr-Lightroyalbluebackground: hsl(241, 81%, 54%);
+  --clr-Violetbluecircle: hsla(256, 72%, 46%, 1);
+  --clr-Persianbluecircle: hsla(241, 72%, 46%, 0);
+
+  /*Bottom Words Colors*/
+  --clr-lightred: hsl(0, 100%, 67%);
+  --clr-yellowish: hsl(39, 100%, 56%);
+  --clr-teal: hsl(166, 100%, 37%);
+  --clr-cobalt: hsl(234, 85%, 45%);
+
+  /*Words and Button*/
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Paleblue: hsl(221, 100%, 96%);
+  --clr-Lightlavender: hsl(241, 100%, 89%);
+  --clr-Darkgrayblue: hsl(224, 30%, 27%);
+  --ff-hanken: "hanken";
+}
+
+/* STYLING
+############################*/
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-family: "Hanken Grotesk";
+}
+
+.card  {
+    background-color: white;
+}
+
+.blue-section {
+    text-align: center;
+    padding: 0 2rem;
+    background-color: blue;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.yourresult {
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+
+.circle {
+    background-color: hsl(234, 85%, 45%);
+    border-radius: 50% 50%;
+    place-items: center;
+}
+
+.svenety {
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+
+.of-span {
+    font-size: 1rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.great {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.description {
+    color: hsl(241, 100%, 89%);
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.summary {
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 1rem 1rem;
+}
+
+.names  {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 1rem;
+}
+
+.reaction-card {
+    background-color:hsl(39, 100%, 96%);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+img {
+    float: left;
+}
+
+.memory-card {
+    background-color:hsl(39, 100%, 96%);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.verbal-card {
+    background-color:hsl(166, 100%, 97%);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.visual-card {
+    background-color:hsl(234, 85%, 95%);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.nums {
+  color: red;
+}
+
+button {
+    background-color: hsla(241, 72%, 46%, 0);
+    width: 100%;
+    height: 3rem;
+    border-radius: 2rem;
+}
